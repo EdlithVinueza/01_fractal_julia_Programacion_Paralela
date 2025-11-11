@@ -1,0 +1,9 @@
+Con el programa bin2header, tranforamos arial.ttf a un array de bytes
+
+¿por qué usar bin2header?
+
+Cuando usas bin2header para convertir arial.ttf en arial.ttf.h, lo que haces es incrustar la fuente dentro del código fuente.
+Es decir, el .ttf se convierte en bytes dentro del propio ejecutable.
+
+Así, el archivo final (.exe o .out) ya contiene la fuente adentro.
+No necesita buscarla en disco.

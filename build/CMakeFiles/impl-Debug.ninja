@@ -51,6 +51,8 @@ build CMakeFiles/fractal_julia.dir/Debug/main.cpp.obj: CXX_COMPILER__fractal_jul
   INCLUDES = -isystem C:/tools/vcpkg/installed/x64-mingw-dynamic/include
   OBJECT_DIR = CMakeFiles\fractal_julia.dir\Debug
   OBJECT_FILE_DIR = CMakeFiles\fractal_julia.dir\Debug
+  TARGET_COMPILE_PDB = CMakeFiles\fractal_julia.dir\Debug\
+  TARGET_PDB = Debug\fractal_julia.pdb
 
 
 # =============================================================================
@@ -67,9 +69,10 @@ build Debug/fractal_julia.exe: CXX_EXECUTABLE_LINKER__fractal_julia_Debug CMakeF
   OBJECT_DIR = CMakeFiles\fractal_julia.dir\Debug
   POST_BUILD = C:\Windows\system32\cmd.exe /C "cd /D C:\tools\01-factal-julia\build && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/tools/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/tools/01-factal-julia/build/Debug/fractal_julia.exe -installedDir C:/tools/vcpkg/installed/x64-mingw-dynamic/debug/bin -OutVariable out"
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\fractal_julia.dir\Debug\
   TARGET_FILE = Debug\fractal_julia.exe
   TARGET_IMPLIB = Debug\libfractal_julia.dll.a
-  TARGET_PDB = fractal_julia.exe.dbg
+  TARGET_PDB = Debug\fractal_julia.pdb
 
 build fractal_julia.exe$:Debug: phony Debug/fractal_julia.exe
 

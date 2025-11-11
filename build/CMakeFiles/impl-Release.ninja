@@ -51,6 +51,8 @@ build CMakeFiles/fractal_julia.dir/Release/main.cpp.obj: CXX_COMPILER__fractal_j
   INCLUDES = -isystem C:/tools/vcpkg/installed/x64-mingw-dynamic/include
   OBJECT_DIR = CMakeFiles\fractal_julia.dir\Release
   OBJECT_FILE_DIR = CMakeFiles\fractal_julia.dir\Release
+  TARGET_COMPILE_PDB = CMakeFiles\fractal_julia.dir\Release\
+  TARGET_PDB = Release\fractal_julia.pdb
 
 
 # =============================================================================
@@ -67,9 +69,10 @@ build Release/fractal_julia.exe: CXX_EXECUTABLE_LINKER__fractal_julia_Release CM
   OBJECT_DIR = CMakeFiles\fractal_julia.dir\Release
   POST_BUILD = C:\Windows\system32\cmd.exe /C "cd /D C:\tools\01-factal-julia\build && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/tools/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/tools/01-factal-julia/build/Release/fractal_julia.exe -installedDir C:/tools/vcpkg/installed/x64-mingw-dynamic/bin -OutVariable out"
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\fractal_julia.dir\Release\
   TARGET_FILE = Release\fractal_julia.exe
   TARGET_IMPLIB = Release\libfractal_julia.dll.a
-  TARGET_PDB = fractal_julia.exe.dbg
+  TARGET_PDB = Release\fractal_julia.pdb
 
 build fractal_julia.exe$:Release: phony Release/fractal_julia.exe
 

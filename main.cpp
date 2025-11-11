@@ -3,6 +3,8 @@
 
 #include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
+
+#include "arial.ttf.h"  // el header generado
  
 int main()
 {
@@ -10,7 +12,8 @@ int main()
     sf::RenderWindow window(sf::VideoMode({800, 600}), "SFML window");
 
     // Create a graphical text to display
-    const sf::Font font("arial.ttf");
+    //const sf::Font font("arial.ttf");
+    const sf:: Font font (arial_ttf, sizeof(arial_ttf)); // Cargar fuente desde memoria
     sf::Text text(font, "Hello SFML", 50);
  
     // Start the game loop
