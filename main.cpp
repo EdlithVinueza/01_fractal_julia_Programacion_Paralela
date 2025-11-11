@@ -1,6 +1,7 @@
 #include <iostream>
+#include <fmt/core.h>
 
 int main() {
-    std::cout << " Hola desde CMake y MinGW!" << std::endl;
+    fmt::print("Hello, Fractal Julia with fmt Library!");
     return 0;
 }

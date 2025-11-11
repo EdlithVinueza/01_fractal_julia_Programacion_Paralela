@@ -45,9 +45,10 @@ build cmake_object_order_depends_target_fractal_julia_RELEASE: phony || .
 
 build CMakeFiles/fractal_julia.dir/Release/main.cpp.obj: CXX_COMPILER__fractal_julia_unscanned_Release C$:/tools/01-factal-julia/main.cpp || cmake_object_order_depends_target_fractal_julia_RELEASE
   CONFIG = Release
-  DEFINES = -DCMAKE_INTDIR=\"Release\"
+  DEFINES = -DFMT_SHARED -DCMAKE_INTDIR=\"Release\"
   DEP_FILE = CMakeFiles\fractal_julia.dir\Release\main.cpp.obj.d
   FLAGS = -O3 -DNDEBUG
+  INCLUDES = -isystem C:/tools/vcpkg/installed/x64-mingw-dynamic/include
   OBJECT_DIR = CMakeFiles\fractal_julia.dir\Release
   OBJECT_FILE_DIR = CMakeFiles\fractal_julia.dir\Release
 
@@ -59,10 +60,10 @@ build CMakeFiles/fractal_julia.dir/Release/main.cpp.obj: CXX_COMPILER__fractal_j
 #############################################
 # Link the executable Release\fractal_julia.exe
 
-build Release/fractal_julia.exe: CXX_EXECUTABLE_LINKER__fractal_julia_Release CMakeFiles/fractal_julia.dir/Release/main.cpp.obj
+build Release/fractal_julia.exe: CXX_EXECUTABLE_LINKER__fractal_julia_Release CMakeFiles/fractal_julia.dir/Release/main.cpp.obj | C$:/tools/vcpkg/installed/x64-mingw-dynamic/lib/libfmt.dll.a
   CONFIG = Release
   FLAGS = -O3 -DNDEBUG
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = C:/tools/vcpkg/installed/x64-mingw-dynamic/lib/libfmt.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\fractal_julia.dir\Release
   POST_BUILD = C:\Windows\system32\cmd.exe /C "cd /D C:\tools\01-factal-julia\build && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/tools/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/tools/01-factal-julia/build/Release/fractal_julia.exe -installedDir C:/tools/vcpkg/installed/x64-mingw-dynamic/bin -OutVariable out"
   PRE_LINK = cd .

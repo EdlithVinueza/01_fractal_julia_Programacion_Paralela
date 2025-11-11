@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Debug/fractal_julia.exe"
+			"path" : "Release/fractal_julia.exe"
 		},
 		{
-			"path" : "Debug/fractal_julia.pdb"
+			"path" : "Release/fractal_julia.pdb"
 		}
 	],
 	"backtrace" : 2,
@@ -14,7 +14,8 @@
 		"commands" : 
 		[
 			"_add_executable",
-			"add_executable"
+			"add_executable",
+			"target_link_libraries"
 		],
 		"files" : 
 		[
@@ -29,7 +30,7 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 15,
+				"line" : 21,
 				"parent" : 0
 			},
 			{
@@ -37,6 +38,12 @@
 				"file" : 0,
 				"line" : 608,
 				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 26,
+				"parent" : 0
 			}
 		]
 	},
@@ -46,7 +53,22 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-O3 -DNDEBUG"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "FMT_SHARED"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "C:/tools/vcpkg/installed/x64-mingw-dynamic/include"
 				}
 			],
 			"language" : "CXX",
@@ -62,8 +84,13 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-O3 -DNDEBUG",
 				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "C:\\tools\\vcpkg\\installed\\x64-mingw-dynamic\\lib\\libfmt.dll.a",
+				"role" : "libraries"
 			},
 			{
 				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",

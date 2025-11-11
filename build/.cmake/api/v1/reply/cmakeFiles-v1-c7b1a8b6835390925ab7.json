@@ -213,6 +213,26 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "C:/tools/mingw64/share/cmake-4.1/Modules/Platform/Linker/Windows-GNU.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/tools/vcpkg/installed/x64-mingw-dynamic/share/fmt/fmt-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/tools/vcpkg/installed/x64-mingw-dynamic/share/fmt/fmt-config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/tools/vcpkg/installed/x64-mingw-dynamic/share/fmt/fmt-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/tools/vcpkg/installed/x64-mingw-dynamic/share/fmt/fmt-targets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/tools/vcpkg/installed/x64-mingw-dynamic/share/fmt/fmt-targets-release.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",
