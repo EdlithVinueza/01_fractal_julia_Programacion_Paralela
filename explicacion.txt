@@ -1,0 +1,12 @@
+Algoritmo (concreto):
+
+Para cada píxel (i, j) se calcula el punto complejo z0 = x + i*y.
+Se itera z_{n+1} = z_n^2 + c hasta que |z| >= 2.0 (diverge) o hasta max_iterations.
+Si diverge antes de max_iterations se pinta un color (aquí rojo), si no, color de fondo (negro).
+Resultado escrito en pixel_buffer y mostrado por SFML.
+"Se llama una cosa dentro de otra" = llamadas anidadas:
+
+main() llama a julia_serial_1(...) (responsable de recorrer la imagen).
+julia_serial_1(...) en cada píxel llama a divergente_1(z) (evalúa la iteración).
+divergente_1 usa std::abs() y operaciones con std::complex internamente.
+Esa cadena es la jerarquía de ejecución (call stack simple).
